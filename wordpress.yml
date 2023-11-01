@@ -3,8 +3,8 @@
   become: true
   vars:
     system_user: admin
-  vars_files:
-    - files/secrets/credentiels.vault
+  #vars_files:
+    #- files/secrets/credentiels.vault
   pre_tasks:
     - name: create www-data
       user: name=www-data state=present
